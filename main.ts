@@ -2,7 +2,23 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`gascan`, function (sprite, lo
     game.gameOver(false)
     game.setGameOverEffect(false, effects.confetti)
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath2, function (sprite, location) {
+    game.gameOver(true)
+    game.setGameOverEffect(true, effects.confetti)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath9, function (sprite, location) {
+    game.gameOver(true)
+    game.setGameOverEffect(true, effects.confetti)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath5, function (sprite, location) {
+    game.gameOver(true)
+    game.setGameOverEffect(true, effects.confetti)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath3, function (sprite, location) {
+    game.gameOver(true)
+    game.setGameOverEffect(true, effects.confetti)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath8, function (sprite, location) {
     game.gameOver(true)
     game.setGameOverEffect(true, effects.confetti)
 })
