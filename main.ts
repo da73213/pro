@@ -1,3 +1,11 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`gascan`, function (sprite, location) {
+    game.gameOver(false)
+    game.setGameOverEffect(false, effects.confetti)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath5, function (sprite, location) {
+    game.gameOver(true)
+    game.setGameOverEffect(true, effects.confetti)
+})
 let gas_can: Sprite = null
 tiles.setCurrentTilemap(tilemap`level1`)
 let mySprite = sprites.create(img`
